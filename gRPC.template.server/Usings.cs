@@ -15,4 +15,6 @@ global using gRPC.template.server.Filters.Internal;
 global using gRPC.template.server.Services;
 global using gRPC.template.server.Validators;
 
+global using gRPC.template.features.books.infraestructure.Models;
+
 global using gRPC.template.shared.logger;

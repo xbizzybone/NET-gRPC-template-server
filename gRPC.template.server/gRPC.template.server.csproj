@@ -18,13 +18,15 @@
     <PackageReference Include="MemoryPack" Version="1.21.1" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
     <PackageReference Include="Serilog" Version="3.1.1" />
+    <PackageReference Include="Serilog.Enrichers.Environment" Version="2.3.0" />
+    <PackageReference Include="Serilog.Enrichers.Thread" Version="3.1.0" />
     <PackageReference Include="Serilog.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\gRPC.template.features.books.infraestructure\gRPC.template.features.books.infraestructure.csproj" />
     <ProjectReference Include="..\gRPC.template.features.books\gRPC.template.features.books.csproj" />
-    <ProjectReference Include="..\gRPC.template.shared.logger\gRPC.template.shared.logger.csproj" />
   </ItemGroup>
 
 </Project>

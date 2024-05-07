@@ -18,5 +18,3 @@ global using gRPC.template.server.Validators;
 global using gRPC.template.features.books;
 global using gRPC.template.features.books.infraestructure;
 global using gRPC.template.features.books.infraestructure.Models;
-
-global using gRPC.template.shared.logger;

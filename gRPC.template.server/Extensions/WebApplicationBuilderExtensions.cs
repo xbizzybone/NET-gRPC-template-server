@@ -5,7 +5,14 @@ public static class WebApplicationBuilderExtensions
 {
     public static WebApplicationBuilder ConfigureApplicationBuilder(this WebApplicationBuilder builder)
     {
-        Log.Logger = LoggerConfig.GetConsoleLogger().CreateLogger();
+        Log.Logger = new LoggerConfiguration()
+            .Enrich.FromLogContext()
+            .Enrich.WithThreadId()
+            .Enrich.WithThreadName()
+            .Enrich.WithMachineName()
+            .Enrich.WithEnvironmentName()
+            .WriteTo.Console()
+            .CreateLogger();
 
         _ = builder.Logging.ClearProviders();
         _ = builder.Logging.AddSerilog(Log.Logger);

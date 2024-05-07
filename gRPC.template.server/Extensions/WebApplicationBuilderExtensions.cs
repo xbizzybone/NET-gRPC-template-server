@@ -1,6 +1,4 @@
-﻿using gRPC.template.features.books.infraestructure;
-
-namespace gRPC.template.server.Extensions;
+﻿namespace gRPC.template.server.Extensions;
 
 [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public static class WebApplicationBuilderExtensions
@@ -32,7 +30,8 @@ public static class WebApplicationBuilderExtensions
 
     private static IServiceCollection AddDependencies(this IServiceCollection services)
     {
-        _ = services.AddSingleton<BooksService>();
+        _ = services.AddScoped<IBookService, BookService>();
+        _ = services.AddScoped<IBookRepository, BookRepository>();
 
         return services;
     }

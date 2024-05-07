@@ -4,7 +4,7 @@ using MongoDB.Driver;
 
 namespace gRPC.template.features.books.infraestructure;
 
-public class BookRepository
+public class BookRepository : IBookRepository
 {
     private readonly IMongoCollection<Book> _booksCollection;
 

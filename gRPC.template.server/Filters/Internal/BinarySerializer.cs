@@ -1,7 +1,4 @@
-﻿using MemoryPack;
-using System.Runtime.Serialization.Formatters.Binary;
-
-namespace gRPC.template.server.Filters.Internal;
+﻿namespace gRPC.template.server.Filters.Internal;
 
 internal static class BinarySerializer
 {

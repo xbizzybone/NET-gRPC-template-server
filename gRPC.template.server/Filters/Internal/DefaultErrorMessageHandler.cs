@@ -1,7 +1,4 @@
-﻿using FluentValidation.Results;
-using System.Text;
-
-namespace gRPC.template.server.Filters.Internal;
+﻿namespace gRPC.template.server.Filters.Internal;
 
 internal class DefaultErrorMessageHandler : IValidatorErrorMessageHandler
 {

@@ -1,6 +1,4 @@
-﻿using MemoryPack;
-
-namespace gRPC.template.server.Filters.Domain;
+﻿namespace gRPC.template.server.Filters.Domain;
 
 [MemoryPackable]
 public partial class ValidationTrailers

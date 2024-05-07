@@ -1,7 +1,4 @@
-﻿using gRPC.template.server.Filters.Internal;
-using Grpc.AspNetCore.Server;
-
-namespace gRPC.template.server.Filters;
+﻿namespace gRPC.template.server.Filters;
 
 public static class GrpcServiceOptionsHelper
 {

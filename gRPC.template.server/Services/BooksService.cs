@@ -1,6 +1,3 @@
-using gRPC.template.server;
-using Grpc.Core;
-
 namespace gRPC.template.server.Services
 {
     public class BooksService : Books.BooksBase

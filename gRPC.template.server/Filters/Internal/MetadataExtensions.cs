@@ -1,7 +1,4 @@
-﻿using FluentValidation.Results;
-using Grpc.Core;
-
-namespace gRPC.template.server.Filters.Internal;
+﻿namespace gRPC.template.server.Filters.Internal;
 
 internal static class MetadataExtensions
 {

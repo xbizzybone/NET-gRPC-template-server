@@ -1,6 +1,3 @@
-using gRPC.template.server.Extensions;
-using Serilog;
-
 var builder = WebApplication.CreateBuilder(args).ConfigureApplicationBuilder();
 var app = builder.Build().ConfigureApplication();
 

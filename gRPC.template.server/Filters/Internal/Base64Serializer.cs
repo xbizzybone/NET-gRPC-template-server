@@ -1,7 +1,4 @@
-﻿using System.Text.Json;
-using System.Text;
-
-namespace gRPC.template.server.Filters.Internal;
+﻿namespace gRPC.template.server.Filters.Internal;
 
 public static class Base64Serializer
 {

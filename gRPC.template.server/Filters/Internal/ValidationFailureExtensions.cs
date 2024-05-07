@@ -1,7 +1,4 @@
-﻿using FluentValidation.Results;
-using gRPC.template.server.Filters.Domain;
-
-namespace gRPC.template.server.Filters.Internal;
+﻿namespace gRPC.template.server.Filters.Internal;
 
 internal static class ValidationFailureExtensions
 {

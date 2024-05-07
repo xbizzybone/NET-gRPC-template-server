@@ -1,6 +1,4 @@
-﻿using FluentValidation;
-
-namespace gRPC.template.server.Filters.Internal;
+﻿namespace gRPC.template.server.Filters.Internal;
 
 internal class ServiceCollectionValidationProvider : IValidatorLocator
 {

@@ -1,9 +1,4 @@
-﻿using gRPC.template.server.Filters;
-using gRPC.template.server.Validators;
-using gRPC.template.shared.logger;
-using Serilog;
-
-namespace gRPC.template.server.Extensions;
+﻿namespace gRPC.template.server.Extensions;
 
 [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public static class WebApplicationBuilderExtensions

@@ -1,6 +1,4 @@
-﻿using Grpc.Core;
-
-namespace gRPC.template.server.Filters.Internal;
+﻿namespace gRPC.template.server.Filters.Internal;
 
 internal class ValidatingAsyncStreamReader<TRequest> : IAsyncStreamReader<TRequest>
 {

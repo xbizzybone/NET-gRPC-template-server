@@ -1,6 +1,4 @@
-﻿using FluentValidation;
-
-namespace gRPC.template.server.Filters;
+﻿namespace gRPC.template.server.Filters;
 
 public interface IValidatorLocator
 {

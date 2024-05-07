@@ -1,6 +1,4 @@
-﻿using FluentValidation.Results;
-
-namespace gRPC.template.server.Filters;
+﻿namespace gRPC.template.server.Filters;
 
 public interface IValidatorErrorMessageHandler
 {

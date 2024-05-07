@@ -1,6 +1,4 @@
-﻿using gRPC.template.server.Services;
-
-namespace gRPC.template.server.Extensions;
+﻿namespace gRPC.template.server.Extensions;
 
 [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public static class WebApplicationExtensions

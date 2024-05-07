@@ -23,7 +23,8 @@ public static class WebApplicationBuilderExtensions
 
     private static IServiceCollection AddObjectsValidators(this IServiceCollection services)
     {
-        _ = services.AddValidator<BookRequestValidator>();
+        _ = services.AddValidator<CreateBookRequestValidator>();
+        _ = services.AddValidator<UpdateBookRequestValidator>();
 
         return services;
     }

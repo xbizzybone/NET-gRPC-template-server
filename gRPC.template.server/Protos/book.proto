@@ -6,17 +6,47 @@ package book;
 
 // The books service definition.
 service Books {
-  rpc SendBook (BookRequest) returns (BookResponse);
+  rpc CreateBook (CreateBookRequest) returns (MessageResponse);
+  rpc ReadBook (BookIdentifier) returns (ReadBookResponse);
+  rpc ReadBooks (Empty) returns (BooksResponse);
+  rpc UpdateBook (UpdateBookRequest) returns (MessageResponse);
+  rpc DeleteBook (BookIdentifier) returns (MessageResponse);
 }
 
-message BookRequest {
+message BookIdentifier {
+  string id = 1;
+}
+
+message Empty {}
+
+message CreateBookRequest {
   string name = 1;
   string price = 2;
   string category = 3;
   string author = 4;
 }
 
-message BookResponse {
-  string message = 1;
-  string id = 2;
+message UpdateBookRequest {
+  string id = 1;
+  string name = 2;
+  string price = 3;
+  string category = 4;
+  string author = 5;
+}
+
+message MessageResponse {
+  string id = 1;
+  string message = 2;
+}
+
+message ReadBookResponse {
+  string id = 1;
+  string name = 2;
+  string price = 3;
+  string category = 4;
+  string author = 5;
+}
+
+message BooksResponse {
+  repeated ReadBookResponse books = 1;
 }

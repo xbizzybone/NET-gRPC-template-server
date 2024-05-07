@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPC.template.server";
+
+package book;
+
+// The books service definition.
+service Books {
+  rpc SendBook (BookRequest) returns (BookResponse);
+}
+
+message BookRequest {
+  string name = 1;
+  string price = 2;
+  string category = 3;
+  string author = 4;
+}
+
+message BookResponse {
+  string message = 1;
+  string id = 2;
+}
